@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f6d77e"/>
+      <stop offset=".5" stop-color="#d4a52a"/>
+      <stop offset="1" stop-color="#b8860b"/>
+    </linearGradient>
+  </defs>
+  <path d="M0 0H50L64 14V64H0Z" fill="#0a0a0a"/>
+  <path d="M1.5 1.5H49.4L62.5 14.6V62.5H1.5Z" fill="none" stroke="url(#g)" stroke-width="3"/>
+  <text x="30" y="33" dy="0.35em" text-anchor="middle" font-family="ui-monospace, 'SF Mono', Menlo, Consolas, monospace" font-size="28" font-weight="700" fill="url(#g)">tn</text>
+</svg>
