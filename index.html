@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>tntech.dev</title>
+  <meta name="description" content="Open-source projects from tntech.dev.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='7' fill='%23111'/><text x='16' y='22' font-family='monospace' font-size='15' font-weight='700' fill='%2334d399' text-anchor='middle'>tn</text></svg>">
+  <style>
+    :root {
+      --bg: #fafaf9; --fg: #1c1917; --muted: #78716c; --line: #e7e5e4; --accent: #059669;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root { --bg: #0c0a09; --fg: #f5f5f4; --muted: #a8a29e; --line: #292524; --accent: #34d399; }
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0; min-height: 100vh; display: grid; place-items: center;
+      background: var(--bg); color: var(--fg);
+      font: 16px/1.6 ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+      padding: 32px 16px;
+    }
+    main { width: 100%; max-width: 560px; }
+    h1 {
+      font: 700 clamp(2.25rem, 8vw, 3.25rem)/1.05 ui-monospace, "SF Mono", "Cascadia Code", Menlo, monospace;
+      letter-spacing: -0.03em; margin: 0 0 16px;
+    }
+    h1 span { color: var(--accent); }
+    p { margin: 0 0 28px; color: var(--muted); font-size: 1.125rem; }
+    nav { display: flex; flex-wrap: wrap; gap: 12px; padding-top: 24px; border-top: 1px solid var(--line); }
+    a {
+      color: var(--fg); text-decoration: none; font-weight: 500;
+      padding: 8px 14px; border: 1px solid var(--line); border-radius: 8px;
+      transition: border-color .15s, color .15s;
+    }
+    a:hover, a:focus-visible { border-color: var(--accent); color: var(--accent); outline: none; }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>tntech<span>.dev</span></h1>
+    <p>Open-source projects, tools and experiments.</p>
+    <nav>
+      <a href="https://github.com/tntechdotdev">GitHub →</a>
+      <a href="mailto:hello@tntech.dev">hello@tntech.dev</a>
+    </nav>
+  </main>
+</body>
+</html>
