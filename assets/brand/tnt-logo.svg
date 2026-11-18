@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <defs>
+    <linearGradient id="gold" x1="0" y1="0" x2="0.35" y2="1">
+      <stop offset="0" stop-color="#fff1c4"/>
+      <stop offset=".3" stop-color="#f6d77e"/>
+      <stop offset=".65" stop-color="#d4a52a"/>
+      <stop offset="1" stop-color="#a87708"/>
+    </linearGradient>
+    <linearGradient id="edge" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f6d77e"/>
+      <stop offset=".5" stop-color="#d4a52a"/>
+      <stop offset="1" stop-color="#8f6506"/>
+    </linearGradient>
+    <radialGradient id="glow" cx=".5" cy=".46" r=".55">
+      <stop offset="0" stop-color="#d4a52a" stop-opacity=".22"/>
+      <stop offset="1" stop-color="#d4a52a" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse">
+      <path d="M32 0H0V32" fill="none" stroke="#d4a52a" stroke-opacity=".09" stroke-width="1"/>
+    </pattern>
+    <filter id="soft" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="10"/>
+    </filter>
+  </defs>
+
+  <!-- background -->
+  <rect width="512" height="512" fill="#070707"/>
+  <rect width="512" height="512" fill="url(#grid)"/>
+  <rect width="512" height="512" fill="url(#glow)"/>
+
+  <!-- chamfered frame -->
+  <path d="M84 60H400L452 112V428Q452 452 428 452H112L60 400V84Q60 60 84 60Z"
+        fill="none" stroke="url(#edge)" stroke-width="5" stroke-linejoin="round"/>
+  <path d="M96 78H392L434 120V420Q434 434 420 434H120L78 392V96Q78 78 96 78Z"
+        fill="none" stroke="#d4a52a" stroke-opacity=".28" stroke-width="2"/>
+
+  <!-- letter glow -->
+  <g filter="url(#soft)" opacity=".55" fill="#d4a52a">
+    <path d="M104 176H200V210H169V328H135V210H118L104 196Z"/>
+    <path d="M214 176H248L282 266V176H316V328H282L248 238V328H214Z"/>
+    <path d="M330 176H426V196L412 210H395V328H361V210H330Z"/>
+  </g>
+
+  <!-- TNT -->
+  <g fill="url(#gold)">
+    <!-- T -->
+    <path d="M104 176H200V210H169V328H135V210H118L104 196Z"/>
+    <!-- N -->
+    <path d="M214 176H248L282 266V176H316V328H282L248 238V328H214Z"/>
+    <!-- T -->
+    <path d="M330 176H426V196L412 210H395V328H361V210H330Z"/>
+  </g>
+
+  <!-- circuit trace -->
+  <g stroke="#d4a52a" stroke-width="4" fill="none" stroke-linecap="square">
+    <path d="M104 358H220L232 370H426"/>
+  </g>
+  <g fill="#f6d77e">
+    <rect x="96" y="350" width="16" height="16"/>
+    <circle cx="426" cy="370" r="8"/>
+  </g>
+  <g fill="#d4a52a" opacity=".55">
+    <rect x="248" y="364" width="12" height="12"/>
+    <rect x="270" y="364" width="12" height="12"/>
+    <rect x="292" y="364" width="12" height="12"/>
+  </g>
+
+  <!-- top status ticks -->
+  <g fill="#d4a52a">
+    <rect x="104" y="140" width="40" height="5"/>
+    <rect x="152" y="140" width="10" height="5" opacity=".6"/>
+    <rect x="170" y="140" width="10" height="5" opacity=".35"/>
+  </g>
+</svg>
